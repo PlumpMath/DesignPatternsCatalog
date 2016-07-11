@@ -9,6 +9,7 @@ namespace DesignPatternsCatalogTests
         [TestMethod]
         public void TestMethod1()
         {
+            //more tests
         }
     }
 }
