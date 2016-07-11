@@ -8,6 +8,6 @@ namespace AbstractFactory
 {
     public class Class1
     {
-        //just for testing of update of vs2015 
+        //done 
     }
 }
