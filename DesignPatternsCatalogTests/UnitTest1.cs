@@ -1,4 +1,5 @@
 ﻿using System;
+using Strategy;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DesignPatternsCatalogTests
@@ -12,7 +13,11 @@ namespace DesignPatternsCatalogTests
         [TestMethod]
         public void TestMethod1()
         {
-            
+            var con = new Context(new ConcreteStrategyA());
+            Assert.AreEqual(con.Execute(), "A");
+
+            con = new Context(new ConcreteStrategyB());
+            Assert.AreEqual(con.Execute(), "B");
         }
     }
 }
