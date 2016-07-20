@@ -8,16 +8,22 @@ namespace DesignPatternsCatalogTests
      * Should I organize unit tests via folders( one for each Pattern ) or via files? 
      */
     [TestClass]
-    public class UnitTest1
+    public class StrategyTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void BasicBaseStrategyTest()
         {
             var con = new Context(new ConcreteStrategyA());
             Assert.AreEqual(con.Execute(), "A");
 
             con = new Context(new ConcreteStrategyB());
             Assert.AreEqual(con.Execute(), "B");
+        }
+
+        [TestMethod]
+        public void BasicRealStrategyTest()
+        {
+
         }
     }
 }
